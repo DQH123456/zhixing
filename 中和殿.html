@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中和殿</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            中和殿，是北京故宫外朝三大殿之一，属于明清传统宫殿建筑。位于紫禁城太和殿、保和殿之间。是皇帝去太和殿大典之前休息的地方，并接受执事官员的朝拜的地方。凡遇皇帝亲祭，如祭天坛、地坛，皇帝于前一日在中和殿阅览祝文。祭先农坛举行亲耕仪式前，还要在此查验种子和农具。
+        </p>
+        <p style='text-indent: 2em;'>
+            中和殿始建于明永乐十八年（1420年），明初称“华盖殿”。嘉靖时遭遇火灾，重修后改称“中极殿”，现天花内构件上仍遗留有明代“中极殿”墨迹。清顺治元年（1644年），清皇室入主紫禁城，第二年改中极殿为中和殿。
+        </p>
+        <p style='text-indent: 2em;'>
+            “中和”二字取自《礼记`中庸》：“中也者，天下之本也；和也者，天下之道也”之意。三大殿中唯有这间房子可供皇帝一人静静的思考。
+        </p>
+        <p style='text-indent: 2em;'>
+            殿名取自《礼记·中庸》：“中也者，天下之本也；和也者，天下之道也”之意。中和殿匾额“允执厥中”匾，为乾隆御笔。典出《书·大禹谟》“人心惟危，道心惟微，惟精惟一，允执厥中。”
+        </p>
+        <p style='text-indent: 2em;'>
+            “中和”二字是说，凡事要做到不偏不倚，恰如其分才能使用各方关系得到和顺，其意在于宣扬“中庸之道”。
+        </p>
+        <p style='text-indent: 2em;'>
+            中和殿高19米，平面呈方形，为单檐四角攒尖，屋面覆黄色琉璃瓦，中为铜胎鎏金宝顶。它的面积是三大殿中最小的。太和、中和与保和三大殿所在的台基上，设置有龙的头部形状的排水口。下雨时，排水头一起喷水，形成“千龙吐水”的景观。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/中和殿.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>
