@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        '那达慕'是蒙古语，亦称'那雅尔(Nair)'，'那达慕'是蒙语的译音，意为'娱乐、游戏'，以表示丰收的
+        <img style='width:35px;vertical-align: middle;' src='./icon/喜.png'
+        />
+        悦之情。'那达慕'大会是蒙古族历史悠久的传统节日，在蒙古族人民的生活中占有重要地位。
+        </p>
+        <p style='line-height:30px;'>
+            每年农历6月初四开始的为期5天的那达慕，是蒙古族人民的盛会
+            <img style='width:40px;vertical-align:middle;' src='./icon/庆祝.png'
+            />
+            。那达慕大会的内容主要有摔跤、赛马、射箭、套马、下蒙古棋等民族传统项目，有的地方还有田径、拔河、篮球
+            <img style='width:30px;vertical-align:middle;' src='./icon/篮球.png'
+            />
+            等体育项目。
+            <img style='width:342px;vertical-align:middle;' src='./icon/那达慕.png'
+            />
+        </p>
+        <p style='line-height:30px;'>
+            每年七、八月牲畜肥壮的季节举行的'那达慕'大会，是人们为了庆祝丰收而举行的文体娱乐大会。每年夏、秋季节举行。'那达慕'，蒙语的意思是娱乐或游戏。大会期间，各地农牧民骑着马，赶着车，带着皮毛、药材等农牧产品。成群结队的汇集于大会的广场。并在会场周围的绿色草原上搭起白色蒙古包。'那达慕'大会上有惊险刺激的赛马、摔跤，令人赞赏的射箭
+            <img style='width:40px;vertical-align:middle;' src='./icon/射箭.png'
+            />
+            ，有争强斗胜的棋艺，有引人入胜的歌舞。赛马
+            <img style='width:45px;vertical-align: middle;' src='./icon/马.png'
+            />
+            也是大会上重要的活动之一。比赛开始，骑手们一字排开，个个扎着彩色腰带，头缠彩巾
+            <img style='width:35px;vertical-align:middle;' src='./icon/彩带.png'
+            />
+            ，洋溢着青春的活力。赛马的起点和终点插着各种鲜艳的彩旗，只等号角长鸣，骑手们便纷纷飞身上鞍，扬鞭策马，一时红巾飞舞，如箭矢齐发。前五名到达终点者，成为草原上最受人赞誉的健儿。射箭、摔跤等比赛也吸引着众多牧民。
+            <img style='width:342px;vertical-align:middle;' src='./那达慕摔跤.jpg'
+            />
+        </p>
+        <p style='line-height: 30px;'>
+            那达慕已有近八百年的历史，一直在锡林郭勒草原上流传和发展，深受各族群众的喜爱，成为了蒙古族文化传统的重要载体。那达慕上的各项活动是力与美的显现、体能和智慧的较量、速度和耐力的比拼，比较全面地展示了在草原上生活的群众的综合素质。那达慕是具有广泛群众性和娱乐性的传统民俗文化活动，具有广泛、深刻的文化内涵，反映了蒙古民族的价值观和审美观。发掘、抢救和保护那达慕，对中国体育史，乃至世界体育史的丰富和完善都有着
+            <img style='width:70px;vertical-align: middle;' src='./icon/重要.png'
+            />
+            价值。因为国家非常重视非物质文化遗产的保护，在2006年5月20日，该民俗经国务院批准列入第一批国家级非物质文化遗产名录。
+            <img style='width:40px;vertical-align: middle;' src='./icon/书.png'
+            />
+        </p>
+        <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+            <audio src="./audio/我的未来式.mp3" id="aud"></audio>
+            <img src="./icon/122.png" id="playpause" />
+            <script type="text/javascript">
+                var aud = document.getElementById("aud");
+                var img = document.getElementById("playpause");
+                img.onclick = function() {
+                    if (aud.paused) {
+                        aud.play();
+                    } else {
+                        aud.pause();
+                    }
+                }
+                aud.addEventListener("play", function (e) {
+                    img.src="./icon/222.png";
+                }, false);
+                aud.addEventListener("pause", function (e){
+                    img.src="./icon/122.png";
+                }, false);
+            </script>
+        </div>
+</body>
+</html>

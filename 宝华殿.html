@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝华殿</title>
+    <style type="text/css">
+        p {
+            text-indent: 2em;
+            font-size:20px;
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <audio src="./audio/我的未来式.mp3"></audio>
+        <embed height="50" width="100" src="./audio/我的未来式.mp3">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;宝华殿。古代汉族宫殿建筑。位于雨花阁后昭福门内，是清宫中正殿佛堂区中主供释迦牟尼佛的一处佛堂,今殿内明间尚悬咸丰皇帝御笔「敬佛」匾额。
+        </p>
+        <p>
+            宝华殿坐北朝南，面阔3间，进深1间，黄琉璃瓦歇山式顶，后檐明间接抱厦一间，整体建筑呈“凸”字型，与北面前檐出厦的中正殿遥相呼应，成南北对称格局。清代，宝华殿明间设四方铜镀金大龛一座，内供金胎释迦牟尼佛一尊。龛前供案上供观音菩萨和阿弥陀佛铜像。东、西次间沿墙供案上亦陈设佛像、供器。这里的日常佛事活动主要是喇嘛诵经和设供献等。清代皇帝每年数次到这里拈香引礼。
+        </p>
+        <p>
+            宝华殿前为一广场式院落，院中央洁白的汉白玉石须弥座上置「大清乾隆乙巳年造」款三足宝鼎青铜大香炉一座，靠北东西各竖汉白玉石基座幡杆一根。清代，这里是宫中举行大型佛事活动的场所，如一年一度的「送岁」、「跳布扎」等。今宝华殿建筑完好，陈设尚在，格局有变。
+
+现宝华殿已完成重修。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/宝华殿.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

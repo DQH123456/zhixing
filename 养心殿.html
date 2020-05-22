@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>养心殿</title>
+    <style type="text/css">
+        p {
+            text-indent: 2em;
+            font-size:20px;
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            养心殿是始建于明代嘉靖年间，位于内廷乾清宫西侧。清代有八位皇帝先后居住在养心殿。养心殿南北长约63米，东西宽约80米，占地5000平方米。
+        </p>
+        <p>
+            养心殿位于东城区故宫博物院内，是一座工字形殿。每间各加方柱两根，外观似9间。
+        </p>
+        <p>
+            养心殿是紫禁城中第一个装上玻璃的宫殿。皇帝的宝座设在明间正中。明间东侧的“东暖阁”内设宝座，这里曾经是慈禧太后垂帘听政处。
+        </p>
+        <p>
+            明间西侧的西暖阁则分隔为数室，有皇帝看阅奏折、与大臣秘谈的小室，有乾隆皇帝的读书处三希堂，还有小佛堂、梅坞等，是专为皇帝供佛、休息的地方。
+        </p>
+        <p>
+            2015年12月，养心殿启动了百余年来首次大修，距离养心殿上一次局部维修，已过去了35年。[1]2016年3月17日养心殿修缮获匿名港商捐赠8000万元。
+        </p>
+        <p>
+            2018年9月3日，北京故宫博物院正式启动对养心殿的修缮。[2]经过两个多月研究、开启、修护，宝匣“内里乾坤”公之于众，五谷、五石、五药等传统内置物和24块金币重见天日。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/养心殿.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>
