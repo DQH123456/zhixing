@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佛光大道</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            佛光大道长1230米，宽108米，1代表这里供奉着世界上唯一释迦摩尼指骨舍利，2代表新旧两座宝塔，3就是代表佛法僧三宝的设计规划，而0就是万物一切所有的众生。而108呢，比如说法师手持的念珠就是108颗，每拨去一颗佛珠就代表看破放下一种烦恼。
+        </p>
+        <p style='text-indent: 2em;'>
+            佛光大道分为主道和辅道。主道上陈列的是十尊菩萨和经幢。两边黄色柱状体的就是佛教的圣物经幢，佛经经常可于其上，象征着佛法的智慧能够降服一切烦恼。
+        </p>
+        <p style='text-indent: 2em;'>
+            经幢也是按照佛教的五个时期来排列的，分别为华严时、阿含时、方等时、般若时和法华时。华严时，指的是法界之法渡大菩萨，这个时期讲求的是大乘佛法。而辅道中东西各八组景观小品。东边是佛陀胜迹，西边是法界源流。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/佛光大道.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

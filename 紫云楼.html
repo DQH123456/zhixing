@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紫云楼</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            紫云楼据载建于唐开元十四年，每逢曲江大会，唐明皇必登临此楼，在欣赏歌舞，赐宴群臣之际，常凭栏观望园外万民游曲江之盛况，与民同乐。现在的紫云楼是参考史料建造的，紫云楼分为四层及南北广场，面积8632平方米，位于园区中心位置，也是全园最主要的仿唐建筑组群之一，并且它也是大唐芙蓉园的点睛楼。国内最大的仿唐阁楼建筑群，它真实的再现了千年前皇家的威严、奢华、大气、恢宏。
+        </p>
+        <p style='text-indent: 2em;'>
+            现在的紫云楼是参考史料建造的，紫云楼分为四层及南北广场，面积8632平方米，位于园区中心位置，也是全园最主要的仿唐建筑组群之一，并且它也是 大唐芙蓉园的点睛楼。国内最大的仿唐阁楼建筑群，它真实的再现了千年前皇家的威严、奢华、大气、恢宏。
+        </p>
+        <p style='text-indent: 2em;'>
+            古时曲江留下过许多有名建筑紫云楼就取材于唐代。但张大师发现诗文、绘画、典籍中井没有关于紫云楼的正式记载一切只能靠现存的资料加上合理的想象发挥来完成。
+        </p>
+        <p style='text-indent: 2em;'>
+            她从敦煌壁画中借鉴了一部分楼宇的样式又给紫云楼“装上”了4座精巧的阙亭再用拱桥相接顿时给紫云楼平添了几分精巧雅致。据民间流传紫云楼玉楼金殿磋峨高耸俯视绿洲遥望曲水。每逢曲江大会皇帝便登临此楼凭栏观景欣赏梨园轻歌曼舞赐宴宠妃近臣。为凸显皇帝居高临下的气势张大师还专门为紫云楼增加了一个12米高与古城墙的高度一样的台座。张大师说现在的紫云楼规模比历史上那座大出许多呢。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/紫云楼.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

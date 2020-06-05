@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐市</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            “市井平常事，最是热闹处”。民俗文化区内——唐市位于园区的南面，由唐集市和戏楼广场组成，面积一万两千零二十二平方米。唐市二期项目，是以古长安城进行贸易、商业活动市集为缩影，以反映唐代“商贾云集、内外通融”的商业文化氛围为核心，集观赏、游乐、消遣、体验、交流、消费为一体的唐朝风俗文化街，经过一年的打造，于2012年5月1日对游客开放，将为市民与游客复原出一个盛世大唐繁华的古代市集。同时，“第二届西安曲江国际光影节”也将在此举办开幕仪式。
+        </p>
+        <p style='text-indent: 2em;'>
+            2012年4月29日-5月1日假期，唐市街区将举行精彩表演，来自各地的民间绝活、民俗舞蹈、精彩杂技、西洋乐队，舞狮锣鼓、活体雕塑、惊险武术、古装走秀、等表演团队轮番上阵，加之独特的开市、闭市仪式，将为游客打造一个唐朝文化情景式的体验街区。
+        </p>
+        <p style='text-indent: 2em;'>
+            除了节日的演出，唐市还为游客市民准备了日常演出，包括秦腔、杂技、舞狮、音乐诸多项目。每逢周末，抛绣球选亲、霓裳羽衣舞、西洋情调乐队将为游客带来不同的感受。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/唐市.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

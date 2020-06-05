@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合十舍利塔</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            合十舍利塔，庄严肃穆，气势恢宏，它供奉着世界唯一的释迦牟尼指骨舍利。合十舍利塔的造型，为双手合十，双手合十表示了佛教的仪式特点、基本理念和人类追求和平的基本意愿。在双手合十造型中，内含的唐塔表明了历史和现代的圆满融合。在双手合十的空间内，又供奉有三身、三世诸佛、菩萨，表明了这是宇宙法界。通过双手合十的建筑造型，表现了佛教和合、和睦、和谐、和平的思想内涵。
+        </p>
+        <p style='text-indent: 2em;'>
+            合十舍利塔塔高148米，“一”表示佛祖与众生无别，佛陀是觉悟的众生，众生是未觉的佛陀。“四”和“八”是夏历四月初八，为佛之诞生，它象征着和谐、安康、国泰民安的旷古盛世。
+        </p>
+        <p style='text-indent: 2em;'>
+            合十舍利塔共六层，分地面及地宫部分。地宫面积达5000多平方米，较古法门寺的神秘地宫大了100多倍，可容纳2000多人在其中活动。地宫内，南面供奉着四大天王、弥勒佛、韦驮菩萨，东西两面供奉着千手观音和地藏菩萨。[12]
+        </p>
+        <p style='text-indent: 2em;'>
+            地宫中心，供奉着释迦牟尼佛化身佛，他的两边，侍立着阿难尊者、迦叶尊者。释迦牟尼佛化身佛身前，有一个舍利宝函，佛祖的真身舍利就存放在这个宝函之中。每逢重大佛教节日，宝函才升起展示，供人瞻仰圣物。
+        </p>
+        <p style='text-indent: 2em;'>
+            合十舍利塔二层，供奉着报身佛。再向上走来到54米处，可以看到唐塔内供奉着法身佛。合十舍利塔自下而上，供奉着佛教三身佛，寓意“三身法像，六重法界”，这便是人们理想的彼岸。
+        </p>
+        <p style='text-indent: 2em;'>
+            站在合十舍利塔上54米处，可以俯视整个文化景区，它分为佛、法、僧三区，融天、地、人为一体，汇众生万物于法门。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/合十舍利塔.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

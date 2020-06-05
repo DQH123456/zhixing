@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陆羽茶社</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            陆羽茶社是西安大唐芙蓉园以唐代“茶圣”陆羽命名的木结构仿唐园林建筑群，采用一屋一轩一亭一廊相连，一石一竹一花一水相接。
+        </p>
+        <p style='text-indent: 2em;'>
+            陆羽茶社以唐代“茶圣”陆羽命名，面积1310平方米，采用一屋一轩一亭一廊相连，一石一竹一花一水相接的中国传统庭院式仿唐园林建筑群。其中的建筑单体茶圣馆、茶道屋、水云轩又均安排于开放式水体庭院中，曲廊画桥巧妙地连接三者，小桥流水潺潺，绿树粉墙掩映。
+        </p>
+        <p style='text-indent: 2em;'>
+            由著名建筑大师张锦秋设计，2005年正式开放。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/陆羽茶社.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>

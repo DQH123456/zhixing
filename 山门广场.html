@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山门广场</title>
+</head>
+<body>
+    <div style='font-size: 22px;'>
+        <p style='text-indent: 2em;'>
+            山门广场区域面积约15万平方米，由佛光门、般若门、菩提门及圆融门4部分组成。此区域涵盖酒店、素食餐饮、大唐禅茶、讲经堂、旅游精品购物、游客中心、大型超市、电瓶车租赁等配套实施一应俱全。山门广场建筑设计风格大气恢宏，北接佛光大道，寓意着众生由此岸世界渡到佛的彼岸世界的过程。
+        </p>
+        <p style='text-indent: 2em;'>
+            山门广场区域面积约15万平方米，由佛光门、般若门、菩提门及圆融门4部分组成。此区域涵盖酒店、素食餐饮、大唐禅茶、讲经堂、旅游精品购物、游客中心、大型超市、电瓶车租赁等配套实施一应俱全。山门广场建筑设计风格大气恢宏，北接佛光大道，寓意着众生由此岸世界渡到佛的彼岸世界的过程。
+        </p>
+        <p style='text-indent: 2em;'>
+            山门广场区域面积约15万平方米，由佛光门、般若门、菩提门及圆融门4部分组成。此区域涵盖酒店、素食餐饮、大唐禅茶、讲经堂、旅游精品购物、游客中心、大型超市、电瓶车租赁等配套实施一应俱全。山门广场建筑设计风格大气恢宏，北接佛光大道，寓意着众生由此岸世界渡到佛的彼岸世界的过程。
+        </p>
+        <p style='text-indent: 2em;'>
+            山门广场区域面积约15万平方米，由佛光门、般若门、菩提门及圆融门4部分组成。此区域涵盖酒店、素食餐饮、大唐禅茶、讲经堂、旅游精品购物、游客中心、大型超市、电瓶车租赁等配套实施一应俱全。山门广场建筑设计风格大气恢宏，北接佛光大道，寓意着众生由此岸世界渡到佛的彼岸世界的过程。
+        </p>
+    </div>
+    <div style="position: fixed;top: 30%;right:10%;width: 10%;">
+        <audio src="./audio/山门广场.mp3" id="aud"></audio>
+        <img src="./icon/122.png" id="playpause" />
+        <script type="text/javascript">
+            var aud = document.getElementById("aud");
+            var img = document.getElementById("playpause");
+            img.onclick = function() {
+                if (aud.paused) {
+                    aud.play();
+                } else {
+                    aud.pause();
+                }
+            }
+            aud.addEventListener("play", function (e) {
+                img.src="./icon/222.png";
+            }, false);
+            aud.addEventListener("pause", function (e){
+                img.src="./icon/122.png";
+            }, false);
+        </script>
+    </div>
+</body>
+</html>
